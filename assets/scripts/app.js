@@ -8,4 +8,10 @@
 
 $(() => {
   // your JS code goes here
+
+// keep track of who's turn on board
+
+// comp to know when clicking on square
+
+
 })

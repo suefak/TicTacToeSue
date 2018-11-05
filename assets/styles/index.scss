@@ -19,8 +19,14 @@ body {
   display: flex;
   height: 80px;
   justify-content: center;
+}
+.box:hover {
+  background-color: $white;
   cursor: pointer;
-  background-color: rbga(10,10,10,.05); color:
+}
+
+.h1 {
+  justify-content: center;
 }
 
 .grey {
@@ -29,4 +35,11 @@ body {
 
 .teal {
   background-color: $teal;
+}
+
+.endgame {
+  display: none;
+  text-align: center;
+  position: absolute;
+  color: $black;
 }

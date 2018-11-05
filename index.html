@@ -13,31 +13,43 @@
 
     </head>
     <body>
-      <h1>Tic Tac Toe!</h1>
-      <form id='email'>
-      <button type='Email'>Email</button>
-    </form>
-    <form id='Password'>
-    <button type='Password'>Password</button>
-  </form>
-
+      <h1>Welcome to my Tic Tac Toe game!</h1>
+      <form id='getSignup'>
+        <input type='text'  placeholder="Email" />
+        <input type='text'  placeholder="Password" />
+        <input type='text'  placeholder="confirm password" />
+         <input type="submit" value="Sign up" onclick="sign up()">
+      </form>
+      <form id='getSignin'>
+        <input type='text'  placeholder="Email" />
+        <input type='text'  placeholder="Password" />
+         <input type="submit" value="Sign in"onClick= "sign in()">
+       </form>
       <div class="container">
         <div class="row">
-          <div class="col-md-3 box black">1</div>
-          <div class="col-md-3 box black">2</div>
-          <div class="col-md-3 box black">3</div>
+          <div class="col-md-3 box">0</div>
+          <div class="col-md-3 box">1</div>
+          <div class="col-md-3 box">2</div>
         </div>
         <div class="row">
-          <div class="col-md-3 box black">4</div>
-          <div class="col-md-3 box black">5</div>
-          <div class="col-md-3 box black">6</div>
+          <div class="col-md-3 box">3</div>
+          <div class="col-md-3 box">4</div>
+          <div class="col-md-3 box">5</div>
         </div>
         <div class="row">
-          <div class="col-md-3 box black">7</div>
-          <div class="col-md-3 box black">8</div>
-          <div class="col-md-3 box black">9</div>
+          <div class="col-md-3 box">6</div>
+          <div class="col-md-3 box">7</div>
+          <div class="col-md-3 box">8</div>
         </div>
+        <div class="endgame">
+          <div class="text"></div>
+        </div>
+        <button onclick="startGame()">Replay</button>
       </div>
+
+
+    </body>
+
 
     </body>
 </html>
