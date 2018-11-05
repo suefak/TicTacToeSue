@@ -4,7 +4,7 @@ const store = {
 }
 
 module.exports = store
-const gameBoard;
+const gameBoard = ['','','','','','','','']
 const player1 = 'X';
 const player2 = 'O';
 const currentTurn = 1;
@@ -43,5 +43,13 @@ function startGame() {
 
 function turnClick(square) {
   // pass in click event
-  console.log(square.target.id)
+  turn(square.target.id,player1)
+}
+
+function turn(squareId,player) {
+  gameBoard[squareId] = playe1;
+  // going to shower player whos turn it was
+  document.getElementById(squareId).innerText = player1;
+  // shows displayed that player just clicked
+  // displays O
 }
