@@ -1,40 +1,54 @@
 @import '~bootstrap/scss/bootstrap';
 
-
-$background-color: #919ade;
-$font-color: #dfdfdf;
-$white: #fff;
-$grey: rgb(128, 128, 128);
-$teal: rgb(0, 156, 161);
-$black: #000;
-
 body {
-  background-color: $background-color;
+  background-color: red;
 }
 
-.box {
-  align-items: center;
-  border: 1px solid $white;
-  color: $font-color;
-  display: flex;
-  height: 81px
-  justify-content: center;
-}
-.box:hover {
-  background-color: $white;
+td {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 70px;
   cursor: pointer;
 }
 
-.h1 {
-  justify-content: center;
+table {
+  border-collapse: collapse;
+  position: absolute;
+  left: 50%;
+  margin-left: -155px;
+  top: 500px;
 }
 
-.grey {
-  background-color: grey;
+tr:hover {
+  background-color: white;
 }
 
-.teal {
-  background-color: $teal;
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+button {
+  padding: 8px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-left: 300px;
 }
 
 .endgame {
@@ -42,4 +56,8 @@ body {
   text-align: center;
   position: absolute;
   color: $black;
+  margin-left: -100px;
+  padding-top: 500px;
+  padding-bottom: 500px;
+  border-radius: 5px;
 }

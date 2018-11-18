@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Tic Tac Toe</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    </head>
-    <body>
-      <h1>Welcome to my Tic Tac Toe game!</h1>
-      <form id='getSignup'>
-        <input type='text'  placeholder="Email" />
-        <input type='text'  placeholder="Password" />
-        <input type='text'  placeholder="confirm password" />
-         <input type="submit" value="Sign up" onclick="sign up()">
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+</head>
+
+<body>
+  <h1>Welcome to my Tic Tac Toe game!</h1>
+  <!-- <form id='getSignup'>
+    <input type='text' placeholder="Email" />
+    <input type='text' placeholder="Password" />
+    <input type='text' placeholder="confirm password" />
+    <input type="submit" value="Sign up" onclick="sign up()">
+  </form>
+  <form id='getSignin'>
+    <input type='text' placeholder="Email" />
+    <input type='text' placeholder="Password" />
+    <input type="submit" value="Sign in" onClick="sign in()">
+  </form>
+<br></br> -->
+
+<form id="sign-up" class="border">
+         <fieldset>
+           <legend>Sign up!</legend>
+           <input type="text" name="credentials[email]" placeholder="Email">
+           <input type="password" name="credentials[password]" placeholder="Password">
+           <input type="password" name="credentials[password_confirmation]"
+                  placeholder="Confirm Password">
+           <input type="submit" value="Sign up!">
+         </fieldset>
       </form>
-      <form id='getSignin'>
-        <input type='text'  placeholder="Email" />
-        <input type='text'  placeholder="Password" />
-         <input type="submit" value="Sign in"onClick= "sign in()">
-       </form>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 box" id="0"></div>
-          <div class="col-md-3 box" id="1"></div>
-          <div class="col-md-3 box" id="2"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 box" id="3"></div>
-          <div class="col-md-3 box" id="4"></div>
-          <div class="col-md-3 box" id="5"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 box" id="6"></div>
-          <div class="col-md-3 box" id="7"></div>
-          <div class="col-md-3 box" id="8"></div>
-        </div>
-        <div class="endgame">
-          <div class="text"></div>
-        </div>
-        <button onclick="startGame()">Replay</button>
-      </div>
+
+      <form id="sign-in" class="border">
+         <fieldset>
+           <legend>Sign in!</legend>
+           <input type="text" name="credentials[email]" placeholder="Email">
+           <input type="password" name="credentials[password]" placeholder="Password">
+           <input type="submit" value="Sign in!">
+         </fieldset>
+      </form>
+
+      <form id="change-password" class="border">
+         <fieldset>
+           <legend>Change password!</legend>
+           <input type="password" name="passwords[old]" placeholder="Old password">
+           <input type="password" name="passwords[new]" placeholder="New password">
+           <input type="submit" value="Change password!">
+         </fieldset>
+      </form>
+
+      <form id="sign-out" class="border">
+         <fieldset>
+           <legend>Sign out!</legend>
+           <input type="submit" value="Sign out!">
+         </fieldset>
+      </form>
+
+  <table>
+  		<tr>
+  			<td class="cell" id="0"></td>
+  			<td class="cell" id="1"></td>
+  			<td class="cell" id="2"></td>
+  		</tr>
+  		<tr>
+  			<td class="cell" id="3"></td>
+  			<td class="cell" id="4"></td>
+  			<td class="cell" id="5"></td>
+  		</tr>
+  		<tr>
+  			<td class="cell" id="6"></td>
+  			<td class="cell" id="7"></td>
+  			<td class="cell" id="8"></td>
+  		</tr>
+  	</table>
+    <div class="endgame">
+      <div class="text"></div>
+    </div>
+    <button onclick="startGame()">Restart</button>
 
 
-    </body>
+</body>
 
 
-    </body>
+</body>
+
 </html>

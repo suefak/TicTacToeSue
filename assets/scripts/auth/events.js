@@ -1,5 +1,18 @@
 
 'use strict'
+// const playerOne = 'X'
+// const computer_token = 'Y'
+//
+// $(document).ready(function() {
+//   const grid = [
+//     ['', '', '',]
+//     ['', '', '',
+//     ['', '', '',],
+//
+//
+//   $('.table').click(function () {
+//     $(this).html(playerOne);
+//   })
 
 const getFormFields = require('../../../lib/get-form-fields.js')
 const api = require('./api.js')
