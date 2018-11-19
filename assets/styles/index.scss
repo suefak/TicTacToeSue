@@ -36,7 +36,8 @@ table {
 .box:hover {
   background-color: $white;
   cursor: pointer;
-=======
+}
+
 tr:hover {
   background-color: white;
 }
@@ -47,7 +48,6 @@ table tr:first-child td {
 
 table tr:last-child td {
   border-bottom: 0;
-
 }
 
 table tr td:first-child {
