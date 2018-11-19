@@ -22,4 +22,4 @@ diagonally, vertically or horizontally to win the game.
 The player that fails to assign they're   X" or "O" in a row of 3 either
 diagonally, vertically or horizontally: will lose
 If either player or player(s) fail to assign their "X" or "O" in a row of 3 either
-diagonally, vertically or horizontally. both players will have a drw
+diagonally, vertically or horizontally. both players will have a draws
