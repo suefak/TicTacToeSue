@@ -23,3 +23,9 @@ The player that fails to assign they're   X" or "O" in a row of 3 either
 diagonally, vertically or horizontally: will lose
 If either player or player(s) fail to assign their "X" or "O" in a row of 3 either
 diagonally, vertically or horizontally. both players will have a draws
+
+
+https://suefak.github.io/TicTacToeSue/
+
+wireframe:
+https://imgur.com/MY1nmE9 
